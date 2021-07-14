@@ -11,7 +11,10 @@ Import Poppins font
 body{
     font-family: 'Poppins', sans-serif
 }
-
+img{
+    width: 100%;
+    height: auto;
+}
 .container {
     width: 90%;
     margin: auto;
@@ -20,7 +23,6 @@ body{
     width: 80%;
     margin: auto;
 }
-
 /*-----------------
  Banner Section start 
  -----------------*/
@@ -38,18 +40,15 @@ section.bennarSec:hover .rightCon img {
     padding-top: 75px;
     padding-bottom: 70px;
 }
-
 .rightCon img {
     width: 100%;
     transition: transform .5s;
 }
-
 .leftCon h1 {
     font-size: 64px;
     line-height: 87px;
     margin-top: 65px;
 }
-
 .leftCon a {
     color: #fff;
     text-decoration: none;
@@ -61,7 +60,6 @@ section.bennarSec:hover .rightCon img {
     margin-top: 10px;
     text-align: center;
 }
-
 .leftCon a i {
     margin-left: 5px;
     font-size: 14px;
@@ -73,12 +71,10 @@ Player Section Start
 section.playerList {
     margin-top: 70px;
 }
-
 .singlePlayer img {
     width: 100%;
     height: auto;
 }
-
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,13 +82,12 @@ section.playerList {
     grid-row-gap: 27px;
     background: #e8e8e882;
 }
-
 .singlePlayer {
     background: #ffffff;
     padding: 15px;
     border: 1px solid #e8e8e8;
+    box-shadow: 0px 0px 11px 2px #d6d6d6;
 }
-
 .singlePlayer h2 {
     font-size: 28px;
     margin: 15px 0px 13px;
@@ -104,18 +99,14 @@ section.playerList {
     line-height: 26px;
     margin-bottom: 20px;
 }
-
-
-
-
 /*-----------------
 Top clubs Section Start
 ------------------ */
 
 section.clubsSec {
     margin-top: 60px;
+    margin-bottom: 30px;
 }
-
 .sectionTitle h1 {
     text-align: center;
     font-size: 37px;
@@ -129,7 +120,6 @@ section.clubsSec {
     grid-column-gap: 20px;
     padding-bottom: 30px;
 }
-
 .singleClub {
     padding: 30px;
     border: 1px solid #cacaca;
@@ -137,9 +127,6 @@ section.clubsSec {
     max-height: 335px;
     box-shadow: 1px 1px 18px 0px #949494;
 }
-
-.singleClub {}
-
 .clubImg img {
     width: 100%;
 }
@@ -148,7 +135,6 @@ img.reallMadrid {
     display: block;
     margin: auto;
 }
-
 .clubInfo {
     position: absolute;
     bottom: 0;
@@ -169,7 +155,6 @@ img.reallMadrid {
     color: #fff;
     margin-top: 50%;
 }
-
 .clubInfo a {
     text-decoration: none;
     display: block;
@@ -182,26 +167,73 @@ img.reallMadrid {
     width: 129px;
     border-radius: 20px;
 }
-
 .clubInfo a i {
     font-size: 15px;
     margin-left: 10px;
 }
 
 /*-----------------
+contact Section Start
+------------------ */
+
+section.contact {
+    margin-bottom: 125px;
+}
+
+.contactForm {
+    width: 40%;
+    margin: auto;
+    position: relative;
+}
+
+.contactForm input {
+    width: 98%;
+    display: block;
+    padding: 11px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+}
+
+input.email {
+    width: 98%;
+}
+textarea.message {
+    display: block;
+    padding: 11px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-radius: 7px;
+    width: 95%;
+    height: 200px;
+}
+.btnmess {
+    border: none;
+    display: block;
+    padding: 10px 25px;
+    background: #e02c6d;
+    color: #fff;
+    font-size: 18px;
+    margin: auto;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    border-radius: 25px;
+}
+/*-----------------
 Footer Section Start
 ------------------ */
 
-
 footer.footerSec {
-    margin-top: 70px;
+    margin-top: 140px;
     text-align: center;
 }
-
 .footerContent img {
     width: 450px;
 }
-
 .socialIcons a {
     background: #c5cccc;
     font-size: 21px;
@@ -216,26 +248,14 @@ footer.footerSec {
     color: #9c9c9c;
     margin-bottom: 30px;
 }
-
 .socialIcons {
     display: flex;
     justify-content: center;
 }
-
 .footerContent p {
     font-size: 18px;
     margin-bottom: 70px;
 }
-
-
-
-
-
-
-
-
-
-
 /*-----------------
 Responsive css Start
 ------------------ */
@@ -269,28 +289,35 @@ Responsive css Start
     .players {
         grid-template-columns: repeat(1, 1fr);
     }
-
     .clubsList {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 20px;
         padding-bottom: 30px;
     }
+    .singleClub {
+        max-height: 610px;
+    }
+    .contactForm {
+        width: 100%;
+    }
     footer.footerSec {
         margin-top: 50px;
     }
     .footerContent img {
-        width: 300px;
+        width: 200px;
     }
     .socialIcons {
         padding: 25px 0px 0px;
     }
     .footerContent p {
         margin-bottom: 90px;
-    }
-
-
+    } 
 }
+
+/*---------------
+ Tablet Devices 
+ ----------------*/
 
 @media only screen and (min-width:689px) and (max-width:992px) {
  
