@@ -1,0 +1,150 @@
+/* ------------------
+Import Poppins font 
+---------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif
+}
+
+.container {
+    width: 1180px;
+    margin: auto;
+}
+.container2 {
+    width: 1100px;
+    margin: auto;
+}
+
+/*-----------------
+ Banner Section start 
+ -----------------*/
+
+section.bennarSec {
+    background: #2D25A0;
+    color: #ffff;
+}
+
+.secCont {
+    display: flex;
+    padding-top: 75px;
+    padding-bottom: 70px;
+}
+
+.leftCon {
+    width: 50%;
+}
+
+.rightCon {
+    width: 50%;
+}
+
+.rightCon img {
+    width: 100%;
+}
+
+.leftCon h1 {
+    font-size: 64px;
+    line-height: 87px;
+    margin-top: 80px;
+}
+
+.leftCon a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    background: #E02C6D;
+    padding: 10px 20px;
+    width: 150px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.leftCon a i {
+    margin-left: 5px;
+    font-size: 14px;
+}
+/*-----------------
+Player Section Start
+------------------ */
+
+section.playerList {
+    margin-top: 70px;
+}
+
+.singlePlayer img {
+    width: 100%;
+    height: auto;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    background: #e8e8e882;
+}
+
+.singlePlayer {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+}
+
+.singlePlayer h2 {
+    font-size: 28px;
+    margin: 15px 0px 13px;
+}
+.singlePlayer p {
+    font-size: 16px;
+    text-align: justify;
+    color: #6C6C6C;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+
+/*-----------------
+Footer Section Start
+------------------ */
+
+
+footer.footerSec {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.footerContent img {
+    width: 450px;
+}
+
+.socialIcons a {
+    background: #c5cccc;
+    font-size: 21px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #9c9c9c;
+    margin-bottom: 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent p {
+    font-size: 18px;
+    margin-bottom: 70px;
+}
